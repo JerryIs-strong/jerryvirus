@@ -1,0 +1,123 @@
+:root{
+    --theme-color: #0078D7;
+    --main-color: #fff;
+}
+
+html{
+    background-color: var(--theme-color);
+    margin: 0;
+    padding: 0 24%;
+    color: var(--main-color);
+    position: relative;
+}
+
+h1{
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    margin: 90px 0 30px;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+h1:hover::before{
+  background-image: url('../Resources/icon/link0.2.png');
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  content:"";
+}
+
+.content:hover::after{
+  content: '⚠️';
+}
+
+details{
+  border: solid 3px;
+  border-radius: 10px;
+  padding:10px;
+  user-select: none;
+}
+
+details > summary::marker{
+  content: '';
+}
+
+details > summary {
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight:bolder;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+}
+
+details > p {
+  padding: 4px;
+  margin: 20;
+  font-family: 'Roboto', sans-serif;
+}
+
+details::before {
+  content:'';
+  height:3px;
+  width: 10px;
+  margin: 0;
+  color: black;
+}
+
+.haa2{
+margin-top:20px;
+}
+
+.moreabout{
+padding: 70px 80px;
+}
+
+/*a:link,
+a:visited,
+a:active {
+  text-decoration:none;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}*/
+
+a {
+  background: 
+    linear-gradient(to right, var(--theme-color),var(--theme-color)),
+    linear-gradient(to right, rgb(245, 28, 28), rgb(241, 43, 181), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 20% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  text-decoration:none;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+@media screen and (max-width: 420px) {
+  html{
+    background-color: var(--theme-color);
+    margin: 0;
+    padding: 0 20px;
+    color: var(--main-color);
+    position: relative;
+  }
+
+  .moreabout{
+    padding: 70px 30px;
+  }
+}
