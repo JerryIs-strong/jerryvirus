@@ -170,12 +170,12 @@ a:active {
 }
 
 .copy{
-  user-select: text;
-  -webkit-user-select: text; 
-  -khtml-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  -o-user-select: text;
+  user-select: all;
+  -webkit-user-select: all; 
+  -khtml-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  -o-user-select: all;
 }
 
 .password{
